@@ -85,9 +85,13 @@ export default function Form() {
   return (
     <Box
       sx={{
-        width: { xs: "340px", lg: "380px" },
+        width: { xs: "min(90%, 340px)", sm: "340px", lg: "380px" },
         height: "auto",
-        padding: { xs: "40px 50px 50px", lg: "40px 60px 60px" },
+        padding: {
+          xs: "40px 40px 40px",
+          sm: "40px 50px 50px",
+          lg: "40px 60px 60px"
+        },
         gap: "40px",
         backgroundColor: "white",
         border: "1px solid #999999",
@@ -104,7 +108,7 @@ export default function Form() {
           fontFamily: "Prompt",
           fontStyle: "normal",
           fontWeight: 500,
-          fontSize: { xs: "40px", md: "47px" },
+          fontSize: { xs: "37px", sm: "40px", md: "47px" },
           lineHeight: "73px",
           color: "black"
         }}
