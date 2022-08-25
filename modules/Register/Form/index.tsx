@@ -29,7 +29,7 @@ export default function Form() {
       if (!/^[0-9]+$/.test(fieldValues.studentId)) {
         temp.studentId = "Must be only 0-9.";
       } else if (fieldValues.studentId.length != 10) {
-        temp.studentId = "StudentId must me 10 numbers.";
+        temp.studentId = "StudentId must be 10 numbers.";
       }
     }
 
