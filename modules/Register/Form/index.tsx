@@ -187,7 +187,7 @@ export default function Form() {
         <LoadingButton
           type="submit"
           loading={loading}
-          // disabled={!formIsValid()}
+          disabled={!formIsValid()}
           sx={{
             textTransform: "none",
             color: "white",
